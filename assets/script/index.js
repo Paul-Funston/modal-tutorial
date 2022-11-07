@@ -19,6 +19,7 @@ const button = select('.show-modal');
 const modal = select('.modal');
 const box = select('.white-box');
 
+
 onEvent('click', button, () => {
   modal.classList.remove('hidden');
 });
@@ -26,3 +27,6 @@ onEvent('click', button, () => {
 onEvent('click', box, () => {
   modal.classList.add('hidden');
 })
+
+
+document.querySelector('.modal')
