@@ -1,5 +1,9 @@
 @import "./general.css";
 
+body {
+  background-color: rgb(245 245 250);
+}
+
 .container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
@@ -39,7 +43,7 @@ button, input[type="button"] {
 }
 
 .white-box {
-  background-color: beige;
+  background-color: white;
   height: 200px;
   width: 200px;
   z-index: 3333;
