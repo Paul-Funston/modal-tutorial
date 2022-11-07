@@ -6,7 +6,7 @@
         <meta name="author" content="Paul Funston">
         <meta name="description" content="My new cool project">
         <meta name="keywords" content="HTML, CSS, SEO, web, web development">
-        <title>Tutorial</title>
+        <title>Modal Window</title>
         <link rel="shortcut icon" href="./assets/media/favicon.png?v=2" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,18 @@
         </header>
         <main>
             <div class="container">
-               
+              <form>
+                <h2>Sample Form</h2>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder ="Phone Number">
+                <input type="button" value="Submit">
+              </form>
+              <button class="show-modal">Test me</button>
+            </div>
+
+            <div class="modal hidden">
+              <div class="white-box"></div>
             </div>
         </main>
     </body>
