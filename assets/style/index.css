@@ -23,9 +23,13 @@ button, input[type="button"] {
 }
 
 .show-modal {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: fixed;
+  top: calc(50vh - 30px);
+  left: calc(50vw - 50px);
+  height: 60px;
+  width: 100px;
+  font-weight: 700;
+
 }
 
 .modal {

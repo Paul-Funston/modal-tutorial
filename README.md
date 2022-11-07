@@ -1,18 +1,17 @@
 
-## How to add a modal element
+## How to create a modal window
 
 ### What is a modal window?
 
   A modal window is an element that displays in front of and deactivates other page content.
   It is useful to use when you need to focus a users attention.
 
-### How to create a modal element
+### Steps to make a modal window
   In order to create a modal window we will use visibility, opacity, and z-index with css as well as
   adding and removing classes with JavaScript.
 
   The modal window has two parts. The first is the transparent window that covers the screen, and the
   second is the content you want to show the user. 
-
 
 HTML
 
@@ -21,7 +20,6 @@ HTML
     <div class="content"></div>
   </div>
   ```
-
 
 CSS
 
@@ -37,7 +35,8 @@ CSS
   }
   ```
 
-Add a Z-index to your main conent, the modal and the content of the modal.
+Add a Z-index to your main content, the modal and the content of the modal to ensure they appear
+in the correct order. The higher numbers always appear above the lower numbers.
 ```CSS
   main {
     z-index: 1111;
@@ -51,7 +50,8 @@ Add a Z-index to your main conent, the modal and the content of the modal.
     z-index: 3333; 
   } 
   ```
-Create a class that hides the modal box and set the visibility properties.
+
+Create a class to hide the modal box and set the visibility properties.
 Alternativetly you could reverse this and create a class that makes the modal visible instead.
 
 ```CSS
@@ -68,7 +68,7 @@ Alternativetly you could reverse this and create a class that makes the modal vi
 
 JavaScript
 
-First select the modal box.
+First select the modal box with querySelect.
 Next decide the trigger event for making the modal appear, we will use a button for this example,
 and create an event that removes the hidden class from the modal.
 
@@ -81,7 +81,6 @@ button.addEventListner('click', () => {
 })
   ```
 There should be another event to add the hidden class back to modal when it should disappear.
-
 
 ## Sample Page
 
